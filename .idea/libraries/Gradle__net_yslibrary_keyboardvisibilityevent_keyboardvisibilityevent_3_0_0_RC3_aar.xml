@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC3@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/ad8652a432a3110fdfd2ff3a03f028f1/keyboardvisibilityevent-3.0.0-RC3/res" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/fda246acc104c7bae61bb50a7dbb247f/keyboardvisibilityevent-3.0.0-RC3/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/fda246acc104c7bae61bb50a7dbb247f/keyboardvisibilityevent-3.0.0-RC3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/fda246acc104c7bae61bb50a7dbb247f/keyboardvisibilityevent-3.0.0-RC3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.yslibrary.keyboardvisibilityevent/keyboardvisibilityevent/3.0.0-RC3/817462b18f5b4c1083885689c9c8cf75613263a6/keyboardvisibilityevent-3.0.0-RC3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.yslibrary.keyboardvisibilityevent/keyboardvisibilityevent/3.0.0-RC3/abec3f9bccd2fefdabdd6c937b6c3adde7fba659/keyboardvisibilityevent-3.0.0-RC3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

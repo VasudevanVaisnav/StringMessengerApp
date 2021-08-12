@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.discretesolutions.string.ui.Signup"
+    android:id="@+id/signup"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/signuplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="25dp"
+                    android:text="WELCOME"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/createacc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/welcome"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="top|center"
+                    android:text="Create Your Account"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/namelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/entername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect"
+                        android:drawableLeft="@drawable/ic_action_username_"
+                        android:drawablePadding="5dp"
+                        android:ems="10"
+                        android:hint="Name"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/maillayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect"
+                        android:drawableLeft="@drawable/ic_action_user_name"
+                        android:drawablePadding="5dp"
+                        android:ems="10"
+                        android:hint="Enter Your Mail"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/passlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <EditText
+                        android:id="@+id/passwordin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect"
+                        android:drawableLeft="@drawable/ic_action_password"
+                        android:drawablePadding="5dp"
+                        android:ems="10"
+                        android:hint="Enter Your Password"
+                        android:inputType="textPassword" />
+
+                    <ImageView
+                        android:id="@+id/hidepass1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-34dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@+id/passwordin"
+                        android:onClick="showpass"
+                        android:src="@drawable/ic_action_hidepass"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cpasslay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/confirmpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect"
+                        android:drawableLeft="@drawable/ic_action_confirmpass1"
+                        android:drawablePadding="5dp"
+                        android:ems="10"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword" />
+
+                    <ImageView
+                        android:id="@+id/hidepass2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-34dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@+id/confirmpassword"
+                        android:onClick="showcpass"
+                        android:src="@drawable/ic_action_hidepass"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/mobilelay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/mobileno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect"
+                        android:drawableLeft="@drawable/ic_action_moblogo"
+                        android:drawablePadding="5dp"
+                        android:ems="10"
+                        android:hint="@string/hint_phone"
+                        android:inputType="number"
+                        android:maxLength="10" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/registerbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/loginbutton"
+            android:gravity="center"
+            android:onClick="register"
+            android:text="SIGNUP"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
